@@ -88,10 +88,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-1t-znS">
-                                <rect key="frame" x="263" y="210" width="63" height="45"/>
+                                <rect key="frame" x="271" y="210" width="47" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
-                                <state key="normal" title="20%+">
+                                <state key="normal" title="20%">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -429,7 +429,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOS-sT-lst">
-                                <rect key="frame" x="201" y="167" width="54" height="27.5"/>
+                                <rect key="frame" x="201" y="167" width="123" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -474,9 +474,12 @@
                         <outlet property="BillAmount" destination="bW2-QY-8Xq" id="RMv-Yo-qN3"/>
                         <outlet property="TipAmount" destination="XOS-sT-lst" id="mTM-oi-UpF"/>
                         <outlet property="TotalPerPerson" destination="TC2-JA-B2m" id="u1F-1F-MUc"/>
+                        <outlet property="fifteen" destination="ONq-1f-ZmW" id="E0S-YR-fch"/>
                         <outlet property="minusButton" destination="7ta-3V-FFM" id="TbL-ua-K32"/>
                         <outlet property="numberPerson" destination="vJy-bJ-yTf" id="HDn-Q6-asy"/>
                         <outlet property="plusButton" destination="2mR-44-YoD" id="h2Q-qH-fd1"/>
+                        <outlet property="ten" destination="Qd7-pN-jOO" id="mKQ-DM-o51"/>
+                        <outlet property="twenty" destination="w8h-1t-znS" id="HV0-Dw-h3T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

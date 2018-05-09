@@ -22,10 +22,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func reset(_ sender: UIButton) {
+        turnWhite()
         runningNumber = ""
         BillAmount.text = "0"
         TipAmount.text = "0"
         TotalPerPerson.text = "0"
+        numberPerson.text = "1"
+        
     }
     @IBAction func dot(_ sender: UIButton) {
         runningNumber += "."
@@ -38,7 +41,8 @@ class ViewController: UIViewController {
    
     
     @IBAction func tenPercent(_ sender: UIButton) {
-        
+        turnWhite()
+        ten.setTitleColor(.green, for:.normal)
         guard let amountText = BillAmount.text else {
             fatalError("BillAmount.text not present")
         }
@@ -58,6 +62,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func twentyPercent(_ sender: UIButton) {
+        turnWhite()
+        twenty.setTitleColor(.green, for:.normal)
         guard let amountText = BillAmount.text else {
             fatalError("BillAmount.text not present")
         }
@@ -72,6 +78,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func fifteenPercent(_ sender: UIButton) {
+        turnWhite()
+        fifteen.setTitleColor(.green, for:.normal)
         guard let amountText = BillAmount.text else {
             fatalError("BillAmount.text not present")
         }
@@ -142,12 +150,24 @@ class ViewController: UIViewController {
         
         
         let tipAmount = amount + tip
-        TotalPerPerson.text = "\(tipAmount / people)"
+        
+        TotalPerPerson.text = String (format: "%.2f", tipAmount / people)
         
       
        
     }
     
+    @IBOutlet weak var ten: UIButton!
+    
+    @IBOutlet weak var fifteen: UIButton!
+    
+    @IBOutlet weak var twenty: UIButton!
+    
+    func turnWhite(){
+        ten.setTitleColor(.white, for:.normal)
+        fifteen.setTitleColor(.white, for:.normal)
+        twenty.setTitleColor(.white, for:.normal)
+    }
     
     @IBAction func amountChanged(_ sender: Any) {
        calculate()
